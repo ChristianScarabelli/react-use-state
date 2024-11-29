@@ -4,9 +4,7 @@ export default function Header() {
     return (
         <>
             <header className={style.header}>
-                <div className='container'>
-
-                </div>
+                <h1>Learn Web development</h1>
             </header>
         </>
     )
