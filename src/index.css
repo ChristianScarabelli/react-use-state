@@ -38,3 +38,8 @@ ol {
 .card-section {
   padding-bottom: 50px;
 }
+
+.row {
+  display: flex;
+  gap: 20px;
+}
