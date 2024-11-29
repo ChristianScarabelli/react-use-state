@@ -1,37 +1,38 @@
 .button {
     line-height: 32px;
     padding: 0 16px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     font-size: 13px;
+    color: white;
+    background-color: #007bff;
 }
+
 
 /* Colori specifici per i bottoni */
-.button_html {
-    background-color: #e34c26;
+.active_html {
+    background-color: #ca4321;
+    color: black;
 }
 
-.button_css {
-    background-color: #264de4;
-    color: white;
+.active_css {
+    background-color: #1d38a3;
 }
 
-.button_javascript {
+.active_javascript {
     background-color: #f0db4f;
     color: #323330;
 }
 
-.button_node.js {
-    background-color: rgb(103, 209, 89);
+.active_nodejs {
+    background-color: rgb(66, 95, 62);
 }
 
-.button_express {
+.active_express {
     background-color: rgb(74, 74, 74);
-    color: white;
 }
 
-.button_reactjs {
+.active_reactjs {
     background-color: rgb(114, 178, 218);
-    color: white;
 }
