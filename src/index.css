@@ -1,0 +1,32 @@
+/* RESET RULES  */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* LAYOUT  */
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+}
