@@ -6,3 +6,32 @@
     cursor: pointer;
     font-size: 13px;
 }
+
+/* Colori specifici per i bottoni */
+.button_html {
+    background-color: #e34c26;
+}
+
+.button_css {
+    background-color: #264de4;
+    color: white;
+}
+
+.button_javascript {
+    background-color: #f0db4f;
+    color: #323330;
+}
+
+.button_node.js {
+    background-color: rgb(103, 209, 89);
+}
+
+.button_express {
+    background-color: rgb(74, 74, 74);
+    color: white;
+}
+
+.button_reactjs {
+    background-color: rgb(114, 178, 218);
+    color: white;
+}
