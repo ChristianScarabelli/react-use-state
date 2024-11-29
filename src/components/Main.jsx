@@ -4,8 +4,10 @@ import languages from '../data/languages.js'
 import { useState } from 'react';
 
 export default function Main() {
-    const [selectedWebLang, setSelectedWebLang] = useState(null)
+    // selectedWebLang contiene il linguaggio (null di default) che posso aggiornare con la sua funzione di stato
+    const [selectedWebLang, setSelectedWebLang] = useState(null) // con il null viene mostrato poi il messaggio di default, perchè di base nessun linguaggio è selezionato
 
+    // funzione per aggiornare lo stato del linguaggio selezionato al click
     const handleSelectedLanguage = (language) => {
         setSelectedWebLang(language)
     }
@@ -19,6 +21,7 @@ export default function Main() {
                                 key={lang.id}
                                 title={lang.title}
                                 isActive={selectedWebLang?.id === lang.id}
+                                // lang è l'oggetto corrente dell'array, che viene passato alla funzione che al click aggiorna il linguaggio
                                 onClick={() => handleSelectedLanguage(lang)}
                             />
                         ))}
@@ -27,6 +30,7 @@ export default function Main() {
             </section>
             <section className='card-section'>
                 <div className="container">
+                    {/* // inserisco la variabile che contiene il linguaggio, adesso aggiornato dal click*/}
                     <Card language={selectedWebLang} />
                 </div>
             </section>
