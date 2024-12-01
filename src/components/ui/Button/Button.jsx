@@ -1,16 +1,19 @@
 import style from './Button.module.css';
 
-export default function Button({ title = '', isActive = false, onClick }) {
-    // creo la variabile className messa in minuscolo e senza punti, per dare lo stile dinamico tramite il nome del title
-    const className = title.toLowerCase().replace('.', '')
+export default function Button({ title = '', onClick, isActive = false }) {
+    // variabile che prende il title e lo metti n minuscolo e togliendo i punti
+    const buttonStyle = title.toLowerCase().replace('.', '');
 
     return (
-        title !== '' &&
-        <button
-            className={`${style.button} ${isActive ? style[`active_${className}`] : ''}`}
-            onClick={onClick}
-        >
-            {title}
-        </button>
-    );
+        <>
+            {title !== '' && (
+                <button
+                    className={`${style.button} ${isActive ? style[`active_${buttonStyle}`] : ''}`}
+                    onClick={onClick}
+                >
+                    {title}
+                </button>
+            )}
+        </>
+    )
 }
