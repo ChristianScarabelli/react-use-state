@@ -1,6 +1,6 @@
 import style from './Button.module.css';
 
-export default function Button({ title = '', onClick, isActive = false }) {
+export default function Button({ title = '', callback = () => { }, isActive = false }) {
     // variabile che prende il title e lo metti n minuscolo e togliendo i punti
     const buttonStyle = title.toLowerCase().replace('.', '');
 
@@ -9,7 +9,7 @@ export default function Button({ title = '', onClick, isActive = false }) {
             {title !== '' && (
                 <button
                     className={`${style.button} ${isActive ? style[`active_${buttonStyle}`] : ''}`}
-                    onClick={onClick}
+                    onClick={callback}
                 >
                     {title}
                 </button>

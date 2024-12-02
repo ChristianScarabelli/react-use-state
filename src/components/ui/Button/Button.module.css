@@ -9,6 +9,9 @@
     background-color: #007bff;
 }
 
+.button:hover {
+    background-color: #0a4f99;
+}
 
 /* Colori specifici per i bottoni */
 .active_html {
@@ -26,7 +29,7 @@
 }
 
 .active_nodejs {
-    background-color: rgb(66, 95, 62);
+    background-color: rgb(58, 136, 47);
 }
 
 .active_express {
